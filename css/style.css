@@ -13,12 +13,16 @@
 }
 
 body {
-	line-height: 1;
+    /*height: 100vh; Para redimensionar a dimensão do body baseado no "viewport" do doc index.html*/
+    box-sizing: border-box; /*Garantindo que os elementos não saiam da body*/
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
 }
 
 .cabecalho {
     display: flex;
     padding: 2% 0 0 15%;
+    gap: 100px;
 }
 
 .cabecalho__menu {
@@ -44,10 +48,15 @@ body {
 }
 
 .rodape {
-    padding: 24px;
+    padding: 25px;
+    display: flex;
     color: var(--cor-terciaria);
     background-color: var(--cor-primaria);
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+.apresentacao__links {
+    text-decoration: none;
 }
