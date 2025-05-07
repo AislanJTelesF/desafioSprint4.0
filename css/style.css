@@ -1,0 +1,53 @@
+:root {
+    --cor-primaria: #1b3573;
+    --cor-secundaria: #1351d8;
+    --cor-terciaria: white;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	line-height: 1;
+}
+
+.cabecalho {
+    display: flex;
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    /* margin: 10% 15%; */
+    padding: 2.78% 15%;
+    display: flex; /*Deixando o conteudo da pagina alinhado numa linha*/
+    align-items: center; /*Alinhamento conforme a imagem, pois é o elemento de maior altura*/
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
