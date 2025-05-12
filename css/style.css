@@ -55,10 +55,6 @@ body {
     gap: 60px;
 }
 
-.apresentacao__video__lancamento {
-    
-}
-
 .apresentacao__paragrafo {
     font-family: var(--fonte-secundaria);
     color: var(--cor-quaternaria);
