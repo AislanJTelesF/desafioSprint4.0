@@ -13,12 +13,18 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /*Garantindo que os elementos não saiam da body*/
 }
 
 body {
-    box-sizing: border-box; /*Garantindo que os elementos não saiam da body*/
     background-color: var(--cor-terciaria);
     color: var(--cor-secundaria);
+}
+
+html, body {             /*Utilizado para deixar o rodape no final da pagina não importando se o main é grande o suficiente para empurra-lo*/
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .cabecalho {
@@ -53,6 +59,7 @@ body {
     flex-direction: column;
     align-items: center; /*Alinhamento conforme a imagem, pois é o elemento de maior altura*/
     gap: 60px;
+    flex: 1;
 }
 
 .apresentacao__paragrafo {
@@ -66,6 +73,7 @@ body {
     padding: 1.2%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     color: var(--cor-terciaria);
     background-color: var(--cor-primaria);
     font-family: var(--fonte-secundaria);
@@ -77,4 +85,50 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
+}
+
+/* ---------------------------------------------------- */
+
+.apresentacao__tabela__principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__checkbox {
+    display: flex;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.apresentacao__paragrafo__checkbox {
+    color: var(--cor-quaternaria);
+}
+
+input[type="checkbox"] {
+    height: 30px;
+    width: 30px;
+}
+
+strong {
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.botao {
+  margin-bottom: 20px;
+  background-color: var(--cor-secundaria);
+  height: 50px;
+  width: 150%;
+  font-family: var(--fonte-secundaria);
+  color: var(--cor-terciaria);
+  font-size: 1.5rem;
+  font-weight: 400;
+  border: none;
+}
+
+.botao:hover {
+    background-color: var(--cor-primaria);
 }
