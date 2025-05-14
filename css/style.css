@@ -43,7 +43,7 @@ html, body { /*Utilizado para deixar o rodape no final da pagina não importando
     gap: 70px; 
 }
 
-.cabecalho__menu a {
+.cabecalho__menu__link {
     display: flex;
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
