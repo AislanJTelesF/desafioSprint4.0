@@ -28,6 +28,7 @@ html, body { /*Utilizado para deixar o rodape no final da pagina não importando
     position: relative;
     padding: 1%;
     justify-content: center;
+    box-shadow: 0 4px 8px var(--cor-primaria);
 }
 
 .cabecalho__img {
@@ -56,8 +57,12 @@ html, body { /*Utilizado para deixar o rodape no final da pagina não importando
     display: flex; /*Deixando o conteudo da pagina alinhado numa linha*/
     flex-direction: column;
     align-items: center; /*Alinhamento conforme a imagem, pois é o elemento de maior altura*/
-    gap: 60px;
+    gap: 30px;
     flex: 1;
+}
+
+.apresentacao__imagem {
+    padding: 1% 0 0 0;
 }
 
 .apresentacao__paragrafo {
@@ -137,8 +142,13 @@ strong {
 
 /* ---------------------------------------------------- */
 
+.image_formulario {
+    padding: 10%;
+    transform: scale(1.3);
+}
+
 .apresentacao__formulario {
-    padding-top: 10%;
+    padding-top: 5%;
     display: flex;
     align-items: center;
 }
