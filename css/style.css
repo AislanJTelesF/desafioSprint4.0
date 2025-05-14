@@ -21,7 +21,7 @@ body {
     color: var(--cor-secundaria);
 }
 
-html, body {             /*Utilizado para deixar o rodape no final da pagina não importando se o main é grande o suficiente para empurra-lo*/
+html, body { /*Utilizado para deixar o rodape no final da pagina não importando se o main é grande o suficiente para empurra-lo*/
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -30,6 +30,7 @@ html, body {             /*Utilizado para deixar o rodape no final da pagina nã
 .cabecalho {
     position: relative;
     padding: 1%;
+    justify-content: center;
 }
 
 .cabecalho__img {
@@ -79,6 +80,10 @@ html, body {             /*Utilizado para deixar o rodape no final da pagina nã
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+.paragrafo__rodape {
+    font-size: 1.2rem;
 }
 
 .apresentacao__links {
