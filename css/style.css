@@ -24,10 +24,14 @@ html, body { /*Utilizado para deixar o rodape no final da pagina não importando
     height: 100%;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .cabecalho {
-    position: relative;
+    display: flex;
     padding: 1%;
-    justify-content: center;
     box-shadow: 0 4px 8px var(--cor-primaria);
 }
 
@@ -36,12 +40,10 @@ html, body { /*Utilizado para deixar o rodape no final da pagina não importando
 }
 
 .cabecalho__menu {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
     display: flex;
-    gap: 70px; 
+    align-items: center;
+    gap: 40px;
 }
 
 .cabecalho__menu__link {
@@ -62,10 +64,11 @@ html, body { /*Utilizado para deixar o rodape no final da pagina não importando
 }
 
 .apresentacao__imagem {
-    padding: 1% 0 0 0;
+    padding: 2% 0 0 0;
 }
 
 .apresentacao__paragrafo {
+    text-align: center;
     font-family: var(--fonte-secundaria);
     color: var(--cor-quaternaria);
     font-size: 1.5rem;
@@ -85,6 +88,7 @@ html, body { /*Utilizado para deixar o rodape no final da pagina não importando
 }
 
 .paragrafo__rodape {
+    text-align: center;
     font-size: 1.2rem;
 }
 
@@ -194,4 +198,31 @@ textarea {
 .botao__contato:hover {
     background-color: var(--cor-primaria);
     font-size: 1.9rem;
+}
+
+/* --------------------RESPONSIVIDADE-------------------------------- */
+
+@media (max-width: 743px) {
+    .cabecalho__img {
+       display: none;
+    }
+    .cabecalho__menu {
+        display: flex;
+        font-size: 1.2rem;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .rodape {
+        display: flex;
+        font-size: 1.2rem;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .apresentacao__tabela__principal {
+        display: flex;
+        flex-direction: column;
+    }
 }
