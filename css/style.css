@@ -13,10 +13,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*Garantindo que os elementos não saiam da body*/
+    box-sizing: border-box;
+    /*Garantindo que os elementos não saiam da body*/
 }
 
-html, body { /*Utilizado para deixar o rodape no final da pagina não importando se o main é grande o suficiente para empurra-lo*/
+html,
+body {
+    /*Utilizado para deixar o rodape no final da pagina não importando se o main é grande o suficiente para empurra-lo*/
     background-color: var(--cor-terciaria);
     color: var(--cor-secundaria);
     display: flex;
@@ -56,9 +59,11 @@ img {
 }
 
 .apresentacao {
-    display: flex; /*Deixando o conteudo da pagina alinhado numa linha*/
+    display: flex;
+    /*Deixando o conteudo da pagina alinhado numa linha*/
     flex-direction: column;
-    align-items: center; /*Alinhamento conforme a imagem, pois é o elemento de maior altura*/
+    align-items: center;
+    /*Alinhamento conforme a imagem, pois é o elemento de maior altura*/
     gap: 30px;
     flex: 1;
 }
@@ -103,6 +108,7 @@ img {
 .apresentacao__tabela__principal {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .apresentacao__checkbox {
@@ -129,15 +135,15 @@ strong {
 }
 
 .botao {
-  margin-bottom: 20px;
-  background-color: var(--cor-secundaria);
-  height: 50px;
-  width: 150%;
-  font-family: var(--fonte-secundaria);
-  color: var(--cor-terciaria);
-  font-size: 1.5rem;
-  font-weight: 400;
-  border: none;
+    margin-bottom: 20px;
+    background-color: var(--cor-secundaria);
+    height: 50px;
+    width: 150%;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    border: none;
 }
 
 .botao:hover {
@@ -164,7 +170,9 @@ strong {
     width: 500px;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
     display: flex;
     justify-content: center;
     border: 2px solid;
@@ -202,16 +210,37 @@ textarea {
 
 /* --------------------RESPONSIVIDADE-------------------------------- */
 
+@media (max-width: 1200px) {
+    .apresentacao__tabela__principal {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .apresentacao__video__lancamento {
+        width: 80%;
+    }
+}
+
+@media (max-width: 840px) {
+    .apresentacao__formulario {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 743px) {
     .cabecalho__img {
-       display: none;
+        display: none;
     }
+
     .cabecalho__menu {
         display: flex;
         font-size: 1.2rem;
         flex-direction: column;
         gap: 20px;
     }
+
     .rodape {
         display: flex;
         font-size: 1.2rem;
@@ -220,9 +249,12 @@ textarea {
     }
 }
 
-@media (max-width: 768px) {
-    .apresentacao__tabela__principal {
-        display: flex;
-        flex-direction: column;
+@media (max-width: 170px) {
+    .cabecalho__menu {
+        font-size: 0.5rem;
+    }
+
+    .rodape {
+        font-size: 0.5rem;
     }
 }
