@@ -35,18 +35,18 @@ img {
 .cabecalho {
     display: flex;
     padding: 1%;
-    box-shadow: 0 4px 8px var(--cor-primaria);
+    box-shadow: 0 0.25rem 0.5rem var(--cor-primaria);
 }
 
 .cabecalho__img {
-    height: 60px;
+    height: 3.75rem;
 }
 
 .cabecalho__menu {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .cabecalho__menu__link {
@@ -64,19 +64,19 @@ img {
     flex-direction: column;
     align-items: center;
     /*Alinhamento conforme a imagem, pois é o elemento de maior altura*/
-    gap: 30px;
+    gap: 1.875rem;
     flex: 1;
 }
 
 .apresentacao__imagem {
-    padding: 2% 0 0 0;
+    padding: 2% 5% 0 5%;
 }
 
 .apresentacao__paragrafo {
     text-align: center;
     font-family: var(--fonte-secundaria);
     color: var(--cor-quaternaria);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 400;
 }
 
@@ -116,7 +116,7 @@ img {
     margin: 0%;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
 }
 
 .apresentacao__paragrafo__checkbox {
@@ -134,20 +134,28 @@ strong {
     font-weight: 400;
 }
 
+.botao_posicao {
+    display: flex;
+    align-items: center;
+}
+
 .botao {
-    margin-bottom: 20px;
+    margin-bottom: 1.875rem;
     background-color: var(--cor-secundaria);
-    height: 50px;
-    width: 150%;
+    height: 3.125rem;
+    width: 9.375rem;
     font-family: var(--fonte-secundaria);
     color: var(--cor-terciaria);
     font-size: 1.5rem;
     font-weight: 400;
     border: none;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
 }
 
 .botao:hover {
     background-color: var(--cor-primaria);
+    font-size: 1.7rem;
 }
 
 /* ---------------------------------------------------- */
@@ -166,8 +174,8 @@ strong {
 .apresentacao__formulario__contato {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    width: 500px;
+    gap: 0.313rem;
+    width: 28.125rem;
 }
 
 input,
@@ -175,9 +183,9 @@ select,
 textarea {
     display: flex;
     justify-content: center;
-    border: 2px solid;
+    border: 0.125rem solid;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     font-size: 1rem;
     font-family: var(--fonte-secundaria);
     padding: 1rem;
@@ -185,21 +193,21 @@ textarea {
 
 textarea {
     resize: none;
-    height: 150px;
+    height: 9.375rem;
     text-align: justify;
 }
 
 .botao__contato {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     background-color: var(--cor-secundaria);
-    height: 50px;
+    height: 3.125rem;
     width: 100%;
     font-family: var(--fonte-secundaria);
     color: var(--cor-terciaria);
     font-size: 1.5rem;
     font-weight: 400;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     transition: all 0.3s ease;
 }
 
@@ -214,11 +222,11 @@ textarea {
     .apresentacao__tabela__principal {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .apresentacao__video__lancamento {
-        width: 80%;
+        width: 95%;
     }
 }
 
@@ -230,22 +238,19 @@ textarea {
 }
 
 @media (max-width: 743px) {
-    .cabecalho__img {
-        display: none;
-    }
-
-    .cabecalho__menu {
+    .cabecalho {
         display: flex;
         font-size: 1.2rem;
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
+        align-items: center;
     }
 
     .rodape {
         display: flex;
         font-size: 1.2rem;
         flex-direction: column;
-        gap: 20px;
+        gap: 1.25rem;
     }
 }
 
